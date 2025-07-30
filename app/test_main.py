@@ -7,8 +7,8 @@ def test_valid_password() -> None:
 
 def test_too_short_password() -> None:
     assert check_password("Str@ng") is False  # 6 characters
-    
-    
+
+
 def test_min_length_edge_case() -> None:
     # These have all requirements (upper, digit, special) but are too short
     assert check_password("A1@bcde") is False  # 7 characters
